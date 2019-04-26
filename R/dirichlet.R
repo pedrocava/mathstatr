@@ -52,7 +52,7 @@ dirichlet_energy <- function(x, standartize = FALSE) {
 
     return(energy)
 
-    }
+    } else {
 
 ##### if x is a vector ---------------------
 
@@ -68,6 +68,6 @@ dirichlet_energy <- function(x, standartize = FALSE) {
 
   return(energy)
 
-}
+} }
 
 
