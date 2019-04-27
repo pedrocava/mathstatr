@@ -39,21 +39,19 @@ weierstrass <- function(x,
     print("b must be odd")
     }
 
-  Btest = is_odd(b)
-
 ###
 
   if(is_odd(b) == FALSE) {
 
     if(Atest == TRUE) {
 
-      warning("a must be smaller than 1")
-      warning("b must be odd")
+      message("a must be smaller than 1")
+      message("b must be odd")
       stop()
 
     }
 
-    warning("b must be odd")
+    message("b must be odd")
     stop()
 
   }
@@ -73,13 +71,21 @@ weierstrass <- function(x,
 
 ########### Calculating series of a^n * cos(b^n pi x) -----------------------
 
+
+  ### if x is an integer or dbl
+
+
+  if(is.vector(x) == FALSE) {
+
   f = vector()
 
   for(n in 1:max){
 
-    if(((a^n)*cos((b^n)*pi*x) > eps) == TRUE) {
+    a = ((a^n)*cos((b^n)*pi*x))
 
-    f[n] = (a^n)*cos((b^n)*pi*x)
+    if(a > eps) {
+
+    f[n] = a
 
     fn = FALSE
 
@@ -97,6 +103,53 @@ weierstrass <- function(x,
 
   return(f)
 
+  }
 }
+
+
+#### if x is a vector
+
+if(is.vector(x)) {
+
+  vector = vector()
+
+  for(i in 1:length(x)) {
+
+  f = vector()
+
+  for(n in 1:max){
+
+    a = ((a^n)*cos((b^n)*pi*x[i]))
+
+    if(a > eps) {
+
+      f[n] = a
+
+      fn = FALSE
+
+    } else {
+
+      fn = TRUE
+    }
+
+    if(fn == TRUE) break
+
+  }
+
+  vector[i] = sum(f)
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+  }
 
 
