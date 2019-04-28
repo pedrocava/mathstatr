@@ -104,12 +104,7 @@ weierstrass <- function(x,
   return(f)
 
   }
-}
-
-
-#### if x is a vector
-
-if(is.vector(x)) {
+} else {
 
   vector = vector()
 
@@ -143,13 +138,5 @@ if(is.vector(x)) {
 }
 
 
-
-
-
-
-
-
-
-  }
 
 
