@@ -104,7 +104,7 @@ weierstrass <- function(x,
   return(f)
 
   }
-} else {
+ else {
 
   vector = vector()
 
@@ -135,6 +135,7 @@ weierstrass <- function(x,
 
   }
 
+ }
 }
 
 

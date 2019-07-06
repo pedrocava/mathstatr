@@ -9,7 +9,7 @@ dirichlet_energy(x, standartize = FALSE)
 \arguments{
 \item{x}{data. Vecotrs}
 
-\item{standartize}{Logical. If set to TRUE, then final result is divided by the the amount of entries. Defaults to FALSE.}
+\item{standartize}{Logical. If set to TRUE, then the final result is divided by the amount of entries. Defaults to FALSE.}
 }
 \value{
 The signal's Dirichlet Energy. If x is a data frame, then the output is a vector.
