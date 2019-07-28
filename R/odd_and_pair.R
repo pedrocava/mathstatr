@@ -13,17 +13,7 @@
 #' @export
 
 is_odd <- function(x) {
-
-  result = vector(length = length(x))
-
-  for(i in 1:length(x)) {
-
-    result[i] = ifelse(x[i] %% 2 == 1, TRUE, FALSE)
-
-  }
-
-  return(result)
-
+  as.logical(x %% 2)
 }
 
 
@@ -43,7 +33,5 @@ is_odd <- function(x) {
 
 
 is_even <- function(x) {
-
-  return(is_odd(x))
-
+  !is_odd(x)
 }
