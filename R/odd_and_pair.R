@@ -33,5 +33,7 @@ is_odd <- function(x) {
 
 
 is_even <- function(x) {
+
   !is_odd(x)
+
 }
