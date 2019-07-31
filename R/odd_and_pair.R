@@ -43,7 +43,9 @@ is_odd <- function(x) {
 
 
 is_even <- function(x) {
+  
+  logic = ifelse(is_odd(x) == TRUE, FALSE, TRUE)
 
-  return(is_odd(x))
+  return(logic)
 
 }
