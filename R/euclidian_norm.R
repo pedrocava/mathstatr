@@ -1,26 +1,25 @@
-#' Euclidian Norm
+#' N-Norm of a vector
 #'
-#' Calculates the euclidian norm of a vector
+#' Calculates the  n-norm of a vector
 #'
 #' @param v must be a numerical vector
-#'
+#' @param n must be an integer. Defaults to 2.
 #' @return The vector's norm
 #'
 #'
 #' @examples
 #'
 #' v = rnorm(n = 200)
-#' euclidian_norm(v)
-#'
+#' euclidian_norm(v)]
+#' @importFrom pracma nthroot
 #' @export
 
+norm <- function(v, n = 2) {
 
-euclidian_norm <- function(v) {
+  s = sum(x^n)
+  norm = pracma::nthroot(s, n = n)
 
-  soma = sum(x^2)
-  total = sqrt(soma)
-
-  return(total)
+  return(norm)
 
 }
 
