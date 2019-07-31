@@ -1,6 +1,6 @@
 #' N-Norm of a vector
 #'
-#' Calculates the  n-norm of a vector
+#' Calculates the n-norm of a vector
 #'
 #' @param v must be a numerical vector
 #' @param n must be an integer. Defaults to 2.
@@ -10,7 +10,8 @@
 #' @examples
 #'
 #' v = rnorm(n = 200)
-#' euclidian_norm(v)]
+#' norm(v)
+#'
 #' @importFrom pracma nthroot
 #' @export
 
