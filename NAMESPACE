@@ -2,7 +2,8 @@
 
 export(GS_process)
 export(dirichlet_energy)
-export(euclidian_norm)
 export(is_even)
 export(is_odd)
+export(norm)
 export(weierstrass)
+importFrom(pracma,nthroot)
