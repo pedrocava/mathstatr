@@ -17,7 +17,7 @@
 
 norm <- function(v, n = 2) {
 
-  s = sum(x^n)
+  s = sum(v^n)
   norm = pracma::nthroot(s, n = n)
 
   return(norm)
