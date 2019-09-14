@@ -40,7 +40,7 @@
 
      for(i in 1:col(A)) {
 
-       A[,i] = euclidian_norm(A[,i])
+       A[,i] = norm(A[,i])
 
      }
    }

@@ -4,7 +4,7 @@
 \alias{weierstrass}
 \title{Weierstrass Function}
 \usage{
-weierstrass(x, a = 0.5, b = 15, eps = 0.01, max = 1000)
+weierstrass(x, a = 0.5, b = 15, eps = 0.01, max = 100)
 }
 \arguments{
 \item{x}{value in which in function should be evaluated. Can be an integer, double or vector.}
@@ -25,7 +25,7 @@ Evaluates the Weierstrass Function
 }
 \examples{
 
-a = seq(1, 100)
+a <- seq(1, 100)
 weierstrass(a)
 
 }

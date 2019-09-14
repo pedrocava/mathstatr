@@ -12,7 +12,7 @@
 #'
 #' @examples
 #'
-#' a = seq(1, 100)
+#' a <- seq(1, 100)
 #' weierstrass(a)
 #'
 #' @export
@@ -21,7 +21,7 @@ weierstrass <- function(x,
                         a = .5,
                         b = 15,
                         eps = .01,
-                        max = 1000
+                        max = 100
                         ) {
 
 ####### checking for conditions of convergence and some flow control --------------------
@@ -75,17 +75,17 @@ weierstrass <- function(x,
   ### if x is an integer or dbl
 
 
-  if(is.vector(x) == FALSE) {
+
 
   f = vector()
 
   for(n in 1:max){
 
-    a = ((a^n)*cos((b^n)*pi*x))
+    c = ((a^n)*cos((b^n)*pi*x))
 
-    if(a > eps) {
+    if(c > eps) {
 
-    f[n] = a
+    f[n] = c
 
     fn = FALSE
 
@@ -104,40 +104,5 @@ weierstrass <- function(x,
   return(f)
 
   }
- else {
-
-  vector = vector()
-
-  for(i in 1:length(x)) {
-
-  f = vector()
-
-  for(n in 1:max){
-
-    a = ((a^n)*cos((b^n)*pi*x[i]))
-
-    if(a > eps) {
-
-      f[n] = a
-
-      fn = FALSE
-
-    } else {
-
-      fn = TRUE
-    }
-
-    if(fn == TRUE) break
-
-  }
-
-  vector[i] = sum(f)
-
-  }
-
- }
-}
-
-
 
 

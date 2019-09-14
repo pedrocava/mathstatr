@@ -7,7 +7,7 @@
 dirichlet_energy(x, standartize = FALSE)
 }
 \arguments{
-\item{x}{data. Vecotrs}
+\item{x}{data vector}
 
 \item{standartize}{Logical. If set to TRUE, then the final result is divided by the amount of entries. Defaults to FALSE.}
 }

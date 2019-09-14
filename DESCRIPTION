@@ -1,12 +1,13 @@
-Package: sillymathr
-Title: Bad Implementations of Statistical Routines and Mathematical Functions
+Package: mathstatr
+Title: Sorted Implementations of Statistical Routines and Mathematical Functions
 Version: 0.0.1.0
 Authors@R: person("Pedro", "Cavalcante", 
                   email = "pedrocolrj@gmail.com", 
                   role = c("aut", "cre"))
-Description: Practicing package in which I implement varied statistical routines, estimators, hypothesis tests and so on.
+Description: Implementations of mathematical and statistical procedures.
 Depends: R (>= 3.5.3.0)
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
+Imports: dplyr, pracma, purrr, tibble
 RoxygenNote: 6.1.1

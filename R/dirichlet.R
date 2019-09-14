@@ -2,7 +2,7 @@
 #'
 #' Calculates the Dirichlet Energy of a data vector.
 #'
-#' @param x data. Vecotrs
+#' @param x data vector
 #' @param standartize Logical. If set to TRUE, then the final result is divided by the amount of entries. Defaults to FALSE.
 #'
 #' @return The signal's Dirichlet Energy. If x is a data frame, then the output is a vector.
