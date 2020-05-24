@@ -1,4 +1,3 @@
 # mathstatr
-A R package made for the sole purpose of practicing "scientific" programming. It contains implementations of some mathematical functions and statistical routines. 
 
-Eventually some of it will be implemented in ``Rcpp``.
+Toy project I used to consolidate my sparse code relating to mathematical simulations. ``mathstatr`` doesn't have uniform style, design guidelines and should not be taken seriously. 
